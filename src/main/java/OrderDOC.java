@@ -18,10 +18,11 @@ public class OrderDOC {
             int cbRandCount = 0;// 索引
             int cbPosition;// 位置
             int k =0;
+//            重新随机排序数组，将重新排序后的内容放入newList数组中
             do {
                 Random rand = new Random();
                 int r = count - cbRandCount;
-                cbPosition = rand.nextInt(r);
+                cbPosition = rand.nextInt(r); // 选取随机位置
                 newList[k] = wordList[cbPosition];
                 k++;
                 cbRandCount++;
