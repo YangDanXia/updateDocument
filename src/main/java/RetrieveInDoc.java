@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class RetrieveInDoc {
     public static void main(String args[]){
-        File f = new File("e:/Postgraduate/英语/单词/考研英语大纲5500词汇表 - 副本.doc");
+        File f = new File("词汇表.doc");
         try {
             InputStream in = new FileInputStream(f);
             HWPFDocument ex = new HWPFDocument(in);
